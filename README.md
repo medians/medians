@@ -8,11 +8,21 @@ This tool helps for the old coded PHP scripts which have used the MySql methods 
 It have all **mysql methods** from **Original MySQL API** 
 
 
-reference : https://www.php.net/manual/en/book.mysql.php
+**Reference** 
+
+https://www.php.net/manual/en/book.mysql.php
+
+
 
 
 **Docs**
-All you need is to include this **mysql_methods** file and it will @override all mysql methods to mysqli 
+
+All you need is to include this **mysql_methods** file 
+
+and it will @override all mysql methods to mysqli 
+
+
+
 
 
 
