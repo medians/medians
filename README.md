@@ -22,6 +22,21 @@ All you need is to include this **mysql_methods** file
 and it will @override all mysql methods to mysqli 
 
 
+// ============================================
+// Set the global vars for database connection
+// ============================================
+
+$host = ''; // MYSQL Database Host 
+
+$db = ''; 	// MYSQL Database name
+
+$user = ''; // MYSQL Database username
+
+$pass = ''; // MYSQL Database password
+
+
+
+
 
 
 
