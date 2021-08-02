@@ -17,7 +17,7 @@ $pass = ''; // MYSQL Database password
 // ==============================================================================
 // Get database host name as a method
 // ==============================================================================
-function getDatabaseHost() { global $db; return $db; }
+function getDatabaseHost() { global $host; return $host; }
 
 // ==============================================================================
 // Get database name as a method
@@ -81,9 +81,7 @@ if (!function_exists('mysql_connect'))
 	function mysql_connect()
 	{
 
-		$return = mysqli_connect($host, $user, $pass, getDatabaseName()); 
-
-		return $return;
+		return mysqli_connect(getDatabaseHost(), getDatabaseUsername(), getDatabasePassword(), getDatabaseName()); 
 	}
 }
 
@@ -199,7 +197,7 @@ if (!function_exists('mysql_escape_string'))
 // ==================================================================================
 if (!function_exists('mysql_fetch_array'))
 {
-	function mysql_fetch_array($result, $result_type = MYSQL_BOTH)
+	function mysql_fetch_array($result, $result_type = MYSQLI_BOTH)
 	{
 		return mysqli_fetch_array($result, $result_type);
 	}
