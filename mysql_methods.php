@@ -54,7 +54,7 @@ if (!function_exists('mysql_affected_rows'))
 // ========================================
 if (!function_exists('mysql_client_encoding'))
 {
-	function mysql_affected_rows()
+	function mysql_client_encoding()
 	{
 		return mysqli_character_set_name(mysql_connect());
 	}
